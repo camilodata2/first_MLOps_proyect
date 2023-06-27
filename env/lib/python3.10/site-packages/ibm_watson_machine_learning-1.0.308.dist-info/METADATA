@@ -1,0 +1,171 @@
+Metadata-Version: 2.1
+Name: ibm-watson-machine-learning
+Version: 1.0.308
+Summary: IBM Watson Machine Learning API Client
+Home-page: https://ibm.github.io/watson-machine-learning-sdk
+Author: IBM
+Author-email: svagaral@in.ibm.com, vbmithun@in.ibm.com, lukasz.cmielowski@pl.ibm.com, dorota.laczak@ibm.com
+License: BSD
+Keywords: watson,machine learning,IBM,Bluemix,client,API,IBM Cloud
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Internet
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: requests
+Requires-Dist: urllib3
+Requires-Dist: pandas (<1.6.0,>=0.24.2)
+Requires-Dist: certifi
+Requires-Dist: lomond
+Requires-Dist: tabulate
+Requires-Dist: packaging
+Requires-Dist: importlib-metadata
+Requires-Dist: ibm-cos-sdk (==2.7.*) ; python_version < "3.9"
+Requires-Dist: ibm-cos-sdk (<2.14.0,>=2.12.0) ; python_version >= "3.10"
+Requires-Dist: ibm-cos-sdk (==2.11.*) ; python_version >= "3.9" and python_version < "3.10"
+Provides-Extra: fl
+Requires-Dist: tensorflow (==2.4.4) ; extra == 'fl'
+Requires-Dist: scikit-learn (==0.23.2) ; extra == 'fl'
+Requires-Dist: torch (==1.7.1) ; extra == 'fl'
+Requires-Dist: numpy (==1.19.2) ; extra == 'fl'
+Requires-Dist: pandas (==1.3.4) ; extra == 'fl'
+Requires-Dist: pytest (==6.2.5) ; extra == 'fl'
+Requires-Dist: pyYAML (==5.4.1) ; extra == 'fl'
+Requires-Dist: parse (==1.19.0) ; extra == 'fl'
+Requires-Dist: websockets (==8.1) ; extra == 'fl'
+Requires-Dist: jsonpickle (==1.4.2) ; extra == 'fl'
+Requires-Dist: requests (==2.27.1) ; extra == 'fl'
+Requires-Dist: scipy (==1.6.3) ; extra == 'fl'
+Requires-Dist: environs (==9.5.0) ; extra == 'fl'
+Requires-Dist: pathlib2 (==2.3.6) ; extra == 'fl'
+Requires-Dist: diffprivlib (==0.5.1) ; extra == 'fl'
+Requires-Dist: numcompress (==0.1.2) ; extra == 'fl'
+Requires-Dist: psutil ; extra == 'fl'
+Requires-Dist: setproctitle ; extra == 'fl'
+Requires-Dist: tabulate (==0.8.9) ; extra == 'fl'
+Requires-Dist: lz4 ; extra == 'fl'
+Requires-Dist: gym ; extra == 'fl'
+Requires-Dist: cloudpickle (==1.3.0) ; extra == 'fl'
+Requires-Dist: image (==1.5.33) ; extra == 'fl'
+Requires-Dist: ddsketch (==1.1.2) ; extra == 'fl'
+Requires-Dist: skorch (==0.11.0) ; extra == 'fl'
+Provides-Extra: fl-crypto
+Requires-Dist: pyhelayers (==1.5.0.3) ; extra == 'fl-crypto'
+Provides-Extra: fl-rt22.1
+Requires-Dist: tensorflow (==2.7.2) ; extra == 'fl-rt22.1'
+Requires-Dist: scikit-learn (==1.0.2) ; extra == 'fl-rt22.1'
+Requires-Dist: torch (==1.10.2) ; extra == 'fl-rt22.1'
+Requires-Dist: numpy (==1.20.3) ; extra == 'fl-rt22.1'
+Requires-Dist: pandas (==1.3.4) ; extra == 'fl-rt22.1'
+Requires-Dist: pytest (==6.2.5) ; extra == 'fl-rt22.1'
+Requires-Dist: pyYAML (==5.4.1) ; extra == 'fl-rt22.1'
+Requires-Dist: parse (==1.19.0) ; extra == 'fl-rt22.1'
+Requires-Dist: websockets (==10.1) ; extra == 'fl-rt22.1'
+Requires-Dist: jsonpickle (==1.4.2) ; extra == 'fl-rt22.1'
+Requires-Dist: requests (==2.27.1) ; extra == 'fl-rt22.1'
+Requires-Dist: scipy (==1.7.3) ; extra == 'fl-rt22.1'
+Requires-Dist: environs (==9.5.0) ; extra == 'fl-rt22.1'
+Requires-Dist: pathlib2 (==2.3.6) ; extra == 'fl-rt22.1'
+Requires-Dist: diffprivlib (==0.5.1) ; extra == 'fl-rt22.1'
+Requires-Dist: numcompress (==0.1.2) ; extra == 'fl-rt22.1'
+Requires-Dist: psutil ; extra == 'fl-rt22.1'
+Requires-Dist: setproctitle ; extra == 'fl-rt22.1'
+Requires-Dist: tabulate (==0.8.9) ; extra == 'fl-rt22.1'
+Requires-Dist: lz4 ; extra == 'fl-rt22.1'
+Requires-Dist: gym ; extra == 'fl-rt22.1'
+Requires-Dist: cloudpickle (==1.3.0) ; extra == 'fl-rt22.1'
+Requires-Dist: image (==1.5.33) ; extra == 'fl-rt22.1'
+Requires-Dist: ddsketch (==1.1.2) ; extra == 'fl-rt22.1'
+Requires-Dist: skorch (==0.11.0) ; extra == 'fl-rt22.1'
+Requires-Dist: protobuf (==3.19.5) ; extra == 'fl-rt22.1'
+Requires-Dist: GPUtil ; extra == 'fl-rt22.1'
+Requires-Dist: joblib (==1.1.1) ; extra == 'fl-rt22.1'
+Provides-Extra: fl-rt22.2-py3.10
+Requires-Dist: tensorflow (==2.9.3) ; extra == 'fl-rt22.2-py3.10'
+Requires-Dist: scikit-learn (==1.1.1) ; extra == 'fl-rt22.2-py3.10'
+Requires-Dist: torch (==1.12.1) ; extra == 'fl-rt22.2-py3.10'
+Requires-Dist: numpy (==1.23.1) ; extra == 'fl-rt22.2-py3.10'
+Requires-Dist: pandas (==1.4.3) ; extra == 'fl-rt22.2-py3.10'
+Requires-Dist: pytest (==6.2.5) ; extra == 'fl-rt22.2-py3.10'
+Requires-Dist: pyYAML (==5.4.1) ; extra == 'fl-rt22.2-py3.10'
+Requires-Dist: parse (==1.19.0) ; extra == 'fl-rt22.2-py3.10'
+Requires-Dist: websockets (==10.1) ; extra == 'fl-rt22.2-py3.10'
+Requires-Dist: jsonpickle (==1.4.2) ; extra == 'fl-rt22.2-py3.10'
+Requires-Dist: requests (==2.27.1) ; extra == 'fl-rt22.2-py3.10'
+Requires-Dist: scipy (==1.8.1) ; extra == 'fl-rt22.2-py3.10'
+Requires-Dist: environs (==9.5.0) ; extra == 'fl-rt22.2-py3.10'
+Requires-Dist: pathlib2 (==2.3.6) ; extra == 'fl-rt22.2-py3.10'
+Requires-Dist: diffprivlib (==0.5.1) ; extra == 'fl-rt22.2-py3.10'
+Requires-Dist: numcompress (==0.1.2) ; extra == 'fl-rt22.2-py3.10'
+Requires-Dist: psutil ; extra == 'fl-rt22.2-py3.10'
+Requires-Dist: setproctitle ; extra == 'fl-rt22.2-py3.10'
+Requires-Dist: tabulate (==0.8.9) ; extra == 'fl-rt22.2-py3.10'
+Requires-Dist: lz4 ; extra == 'fl-rt22.2-py3.10'
+Requires-Dist: gym ; extra == 'fl-rt22.2-py3.10'
+Requires-Dist: cloudpickle (==1.3.0) ; extra == 'fl-rt22.2-py3.10'
+Requires-Dist: image (==1.5.33) ; extra == 'fl-rt22.2-py3.10'
+Requires-Dist: ddsketch (==1.1.2) ; extra == 'fl-rt22.2-py3.10'
+Requires-Dist: skorch (==0.12.0) ; extra == 'fl-rt22.2-py3.10'
+Requires-Dist: protobuf (==3.19.5) ; extra == 'fl-rt22.2-py3.10'
+Requires-Dist: GPUtil ; extra == 'fl-rt22.2-py3.10'
+Requires-Dist: joblib (==1.1.1) ; extra == 'fl-rt22.2-py3.10'
+Requires-Dist: cryptography (==39.0.1) ; extra == 'fl-rt22.2-py3.10'
+Provides-Extra: fl-rt23.1-py3.10
+Requires-Dist: tensorflow (==2.12.0) ; extra == 'fl-rt23.1-py3.10'
+Requires-Dist: scikit-learn (==1.1.1) ; extra == 'fl-rt23.1-py3.10'
+Requires-Dist: torch (==2.0.0) ; extra == 'fl-rt23.1-py3.10'
+Requires-Dist: numpy (==1.23.5) ; extra == 'fl-rt23.1-py3.10'
+Requires-Dist: pandas (==1.5.3) ; extra == 'fl-rt23.1-py3.10'
+Requires-Dist: pytest (==6.2.5) ; extra == 'fl-rt23.1-py3.10'
+Requires-Dist: pyYAML (==5.4.1) ; extra == 'fl-rt23.1-py3.10'
+Requires-Dist: parse (==1.19.0) ; extra == 'fl-rt23.1-py3.10'
+Requires-Dist: websockets (==10.1) ; extra == 'fl-rt23.1-py3.10'
+Requires-Dist: jsonpickle (==1.4.2) ; extra == 'fl-rt23.1-py3.10'
+Requires-Dist: requests (==2.27.1) ; extra == 'fl-rt23.1-py3.10'
+Requires-Dist: scipy (==1.10.1) ; extra == 'fl-rt23.1-py3.10'
+Requires-Dist: environs (==9.5.0) ; extra == 'fl-rt23.1-py3.10'
+Requires-Dist: pathlib2 (==2.3.6) ; extra == 'fl-rt23.1-py3.10'
+Requires-Dist: diffprivlib (==0.5.1) ; extra == 'fl-rt23.1-py3.10'
+Requires-Dist: numcompress (==0.1.2) ; extra == 'fl-rt23.1-py3.10'
+Requires-Dist: psutil ; extra == 'fl-rt23.1-py3.10'
+Requires-Dist: setproctitle ; extra == 'fl-rt23.1-py3.10'
+Requires-Dist: tabulate (==0.8.9) ; extra == 'fl-rt23.1-py3.10'
+Requires-Dist: lz4 ; extra == 'fl-rt23.1-py3.10'
+Requires-Dist: gym ; extra == 'fl-rt23.1-py3.10'
+Requires-Dist: cloudpickle (==1.3.0) ; extra == 'fl-rt23.1-py3.10'
+Requires-Dist: image (==1.5.33) ; extra == 'fl-rt23.1-py3.10'
+Requires-Dist: ddsketch (==1.1.2) ; extra == 'fl-rt23.1-py3.10'
+Requires-Dist: skorch (==0.12.0) ; extra == 'fl-rt23.1-py3.10'
+Requires-Dist: protobuf (==4.22.1) ; extra == 'fl-rt23.1-py3.10'
+Requires-Dist: GPUtil ; extra == 'fl-rt23.1-py3.10'
+Requires-Dist: joblib (==1.1.1) ; extra == 'fl-rt23.1-py3.10'
+Requires-Dist: cryptography (==39.0.1) ; extra == 'fl-rt23.1-py3.10'
+
+******************************************
+## Welcome to `ibm-watson-machine-learning`
+******************************************
+
+``ibm-watson-machine-learning`` is a library that allows to work with Watson Machine Learning service on [IBM Cloud](https://console.bluemix.net/catalog/services/machine-learning) and
+IBM Cloud for Data. Train, test and deploy your models as APIs for application development, share with colleagues using this python library.
+
+### [Package documentation](https://ibm.github.io/watson-machine-learning-sdk)
+==========================================
+
+
