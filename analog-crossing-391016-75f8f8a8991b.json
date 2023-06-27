@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "analog-crossing-391016",
+  "private_key_id": "75f8f8a8991b1b07fb4c2faacff831448d79b28b",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDKfVwB+thOMqvH\ntwHe86wPmWdYJsZunHQlGuWY12tGZpMv/3d+A3tfeOcHfLeZGNRCh685UILmZCc2\ne95G6EcpmAofTH1b8uu4Di7HahknFU8Y6i1HWK/CJVO2epmBZW4OQdNng/p4sWVx\nwSIC9M89gp2D+LQfkS+oXuBuHye5Q1oaXly3QmBc1o/+STcLVcFYsh2MDPHmeCgZ\nyB/l1zkYV8QWp8+QJacfnfcM6bMo0befeHGDwxqWM38ryy/a0Kx5vMYBO3jNJRQn\n+a4wQIf4n397bi17hgOrqJiCY2XRBDF7v1OhGaZQpIN8pDHh9Pm0Tb3NKjeDvE4N\nnUkTusiTAgMBAAECggEADli0wiHRst39icLk9l+cBebqiYuwbM8s83a6ZF/ZkT1c\nmalSAAhNyhqOKTD5mSFHOLIrBLaNmmE83gFcuE1mGAOrrpgEHGr+WdC3bm2NUVWT\nKxgRvoesEZIEzQhWrpz5yozOEPwq145KD7Xiq67zV/pUdVs+TSuY4tGwuQdVZddy\nxICJCjaMIDOK75F9osFEHqmA0OyRFi3FBL0WzS2N5X2cbcs9u84yzl9G0gm4ODbl\n67R6SqOqBN1VE8He2iNV+IK6v4XnF+scKoCSNRFJEA7n00ybjjF66s685vHT5cqn\nFJ003xzmRge3x8xa1GgE7jJ+kcw9iFr6ikqWqJ648QKBgQD1m9SIHsfQHiu1cjbb\nY0xunCqhRhct2Kdog/WHkA5TXdx1wjYwKna0/yMw9yyrjxxOIMPaR3FcOMUut0AL\nUMY4+qBg0DyNFaQisyXHHdFF9oadS6IzoRWPl0ztET1cZYY7vyy2mswC76U1mdv1\nwUX1sTVEE3KtoetoynPAHDWJzwKBgQDTDoKda+reYcAJF2yGkqsuf/DRX/F3Ar3d\nG8CvEmSR591fkGjmpQQvJVOjIbpCQ+8S1GWHz3PtKXVDpCBDAkG5mN/dEqxx4hd8\n4+XpCjq6O+DNMC1d7igO1v7zyzICYkXcMgbJxlyhowv+x1GN8IY3mr4Ww6tyQJ3B\npmme19W5/QKBgFFJQ6vRVBwjACBLLrCpSpCJCurZQa6gt7c1hTtaiAM7W011+20x\ngJwinMkF5TjaYmnRGkDRyEjXWRs+9ulH0HLnL9Ea2g9vjCUX2Xbu/WYEU0UX1RT1\nSSd+0azcOcyspSJ9ARVmYgLOwYTd6RiK4NaR0ak4LoocvsatymVYcLetAoGAGzZp\nvOZnOBkea42rnoZWr/4rDLP0LEYcOOAVLf2PHgjpUCMMg4CPU4zahdQZceXUc3cT\nSDmFVvTbe8czqbAmzUlaw+Ree6iNIrs3r550CAMkbxBhKRVF8PPjl4eBgTEulL+W\nhHmhA+5D46vLZiO3CoBXNhQwjOCr9oYAZEyr7/kCgYEAqAmwcpV4GBqB3AOvo0un\nFecWl5uB0+lMtLqDGdQ0vClgWiSq2qtQpROm9uIZfDP529R0TUAHRWkTMS7K+Yue\nzfqMXq5cFwtNLJnqKLXvxkqa9cniQ9bsybELvRCI6aMpLj4mtZPgSM4T4VHwA53C\nwQrZois4aGYv9B7TxxC8/es=\n-----END PRIVATE KEY-----\n",
+  "client_email": "storage-manager@analog-crossing-391016.iam.gserviceaccount.com",
+  "client_id": "104960777845985847919",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/storage-manager%40analog-crossing-391016.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

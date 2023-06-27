@@ -1,0 +1,8 @@
+[console_scripts]
+dvc = dvc.cli:main
+
+[fsspec.specs]
+dvc = dvc.api:DVCFileSystem
+
+[pytest11]
+dvc-testing = dvc.testing.plugin
