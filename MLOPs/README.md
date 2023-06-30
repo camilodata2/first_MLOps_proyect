@@ -1,7 +1,5 @@
 # MLOPs
 
-Project created with MLOps-Template cookiecutter. For more info: https://mlopsstudygroup.github.io/mlops-guide/
-
 
 ## 📋 Requirements
 
