@@ -11,7 +11,7 @@ app.title='ML model'
 app.version='0.0.1'
 
 app.middleware(Manejo_de_erro)
-app.add_api_route()
+#app.include_router(user_router)
 
 @app.get("/")
 def root():
