@@ -9,6 +9,7 @@ reports.txt
 *.__init__
 *.csv
 *.pkl
+*.__pycache__
 
 # Distribution / packaging
 .Python
