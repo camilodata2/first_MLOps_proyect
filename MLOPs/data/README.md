@@ -1,3 +1,4 @@
-# Data
+# DATA
+<em> " PROYECT DATASET" <em>
 
-Here goes the data for the project, such as training datasets. When using DVC, it should point at this folder
+Here we have that dataset of the proyect, and it will also have the dvc file of my dataset

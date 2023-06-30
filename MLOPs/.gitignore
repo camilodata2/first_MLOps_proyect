@@ -5,6 +5,10 @@ __pycache__/
 
 # C extensions
 *.so
+reports.txt
+*.__init__
+*.csv
+*.pkl
 
 # Distribution / packaging
 .Python

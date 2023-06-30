@@ -5,9 +5,13 @@ from make_api.views import *
 from fastapi.responses import HTMLResponse
 from make_api.jwt import *
 from make_api.models import PredictionRequest
+from middleware.error import *
 app=FastAPI(docs_url='/')
 app.title='ML model'
 app.version='0.0.1'
+
+app.middleware(Manejo_de_erro)
+app.add_api_route()
 
 @app.get("/")
 def root():
@@ -26,6 +30,6 @@ def loging_user(user:Client):
     else:
         return HTMLResponse(status_code=401, content={"message": "Credenciales inválidas, intente de nuevo"})
 
-@app.post('/vi/prediction')
+@app.post('/v1/prediction',tags=['my first prediction'])
 def make_model_prediction(request:PredictionRequest):
     return PredictionResponse(adult=get_prediction(request))
