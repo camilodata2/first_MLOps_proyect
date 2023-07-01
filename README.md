@@ -10,6 +10,7 @@ We'll use tools like docker to package  the api created with the FastAPI framewo
 *[Docker](#Docker)
 *[DVC](#DVC)
 *[FastAPI](#FastAPI)
+*[GitHub Action](#GitHubAction)
 
 ### :star: IMAGE
 <img src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2023/04/raspberry-lanza-editor-codigo-aprender-python-lenguaje-ia-3008158.jpg?tf=3840x" alt="image" width="300" height="200">
