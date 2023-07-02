@@ -5,9 +5,9 @@ jobs:
   run-on: ubunto-latest
   env:
    SERVICE_ACCOUNT_KEY: ${(secrets.SERVICE_ACCOUNT_KEY)}
-  Step:
+  steps:
    -name: checkout the repo
-    use: actions/checkout@v2
+    use: actions/checkout@v3
    -name: creating and activating virtualenv
     run: |
        pip install virtualenv
