@@ -1,0 +1,24 @@
+name: Testing API
+on: [push, pull_request]
+jobs:
+ testing_api:
+  run-on: ubunto-latest
+  env:
+   SERVICE_ACCOUNT_KEY: ${(secrets.SERVICE_ACCOUNT_KEY)}
+  Step:
+   -name: checkout the repo
+    use: action/chechout@v2
+   -name: creating and activating virtualenv
+    run: |
+       pip install virtualenv
+       virtualenv env
+       source env/bin/activate
+   -name: Installing dependecie
+    run : |
+     pip install dvc[gs]
+     pip install -r requirements.txt
+   -name: Test api
+    run: |
+    export GOOGLE_APPLICATION_CREDENTIALS=(Python utilities/setter.py)
+    dvc pull models/model.pkl -r model-tracket
+    pytest.py
