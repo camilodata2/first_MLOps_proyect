@@ -7,7 +7,7 @@ jobs:
    SERVICE_ACCOUNT_KEY: ${(secrets.SERVICE_ACCOUNT_KEY)}
   Step:
    -name: checkout the repo
-    use: action/chechout@v2
+    use: actions/checkout@v1
    -name: creating and activating virtualenv
     run: |
        pip install virtualenv
