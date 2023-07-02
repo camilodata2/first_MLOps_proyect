@@ -6,19 +6,19 @@ jobs:
   env:
    SERVICE_ACCOUNT_KEY: ${(secrets.SERVICE_ACCOUNT_KEY)}
   steps:
-   -name: checkout the repo
-    uses: actions/checkout@v3
-   -name: creating and activating virtualenv
-    run: |
-       pip install virtualenv
+    -name: Checkout the repo
+      uses: actions/checkout@v2
+    -name: Creating and activating virtualenv
+      run: |
+       pip install virtualenv.
        virtualenv env
        source env/bin/activate
-   -name: Installing dependecie
-    run : |
-     pip install dvc[gs]
-     pip install -r requirements.txt
-   -name: Test api
-    run: |
-    export GOOGLE_APPLICATION_CREDENTIALS=(Python utilities/setter.py)
-    dvc pull models/model.pkl -r model-tracket
-    pytest.py
+    -name: Installing dependecie
+      run : |
+        pip install dvc[gs]
+        pip install -r requirements.txt
+    -name: Test api
+      run: |
+       export GOOGLE_APPLICATION_CREDENTIALS=(Python utilities/setter.py)
+       dvc pull models/model.pkl -r model-tracket
+       pytest.py
