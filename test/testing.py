@@ -1,5 +1,5 @@
 from fastapi.testclient import TestClient
-from main import app
+from make_api.main import app
 from fastapi.responses import HTMLResponse
 client = TestClient(app)
 

@@ -1,0 +1,53 @@
+name : Continous Training
+on:
+ push:
+  branches:
+   -working_continues_training
+  schedule:
+    -cron: '0 */6 * * *'
+  workflow_dispatch:
+    inputs:
+     reason:
+      description: What are u doing?
+      required: false
+      defaul: running CT
+jobs:
+ continuos-training:
+   run-on: ubuntu-latest
+   steps:
+    - name: Checkout repo
+      uses: actions/checkout@v2
+    - name: Train model
+      env :
+       SERVICE_ACCOUNT_KEY: ${{secrets.SERVICE_ACCOUNT_KEY}}
+      run: |
+        pip3 install virtualenv
+        virtualenv env
+        source env/bin/activate
+        pip install -r requirements.txt
+        export GOOGLE_APPLICATION_CREDENTIAL=$(python utilities/setter.py)
+        dvc pull models/model.pkl.dvc -r model-tracket
+        dvc unprotect model/model.pkl
+        dvc repro -f
+        echo "training completed"
+        dvc add model/model.pkl -r model-tracket -to--remote
+        dvc push model/model.pkl.dvc -r model-tracket
+    - name: commit .dvc file change
+      run: |
+       git config --local user.email
+       git config --local user.name
+       git add .
+       git commit -m "updating model seralization"
+    - uses: ad-m/github-push-action@master
+      with:
+       github_token: ${{secrets.GITHUB_TOKEN}}
+       branch: ${{ github.ref}}
+    - uses: iterative/setup-cml@v1
+    - name: Push metric
+      env:
+       REPO_TOKEN: $${{secrets.GITHUB_TOKEN}}
+      run: |
+       cat report.txt >> report.md
+       cml-publish prediction_behavior-png --md >> report.md
+       cml-send-comment report.md
+     
