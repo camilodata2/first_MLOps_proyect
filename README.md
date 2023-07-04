@@ -11,8 +11,12 @@ We'll use tools like docker to package  the api created with the FastAPI framewo
 *[DVC](#DVC)
 *[FastAPI](#FastAPI)
 *[GitHub Action](#GitHubAction)
+*[GOOGLE CLOUD](#GOOGLEGLOUD)
+*[scikit-learn](#sckit-learn)
 
-### :star: IMAGE
-<img src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2023/04/raspberry-lanza-editor-codigo-aprender-python-lenguaje-ia-3008158.jpg?tf=3840x" alt="image" width="300" height="200">
-<img src="https://d1.awsstatic.com/acs/characters/Logos/Docker-Logo_Horizontel_279x131.b8a5c41e56b77706656d61080f6a0217a3ba356d.png" alt="image" width="400" height="300">
+### ✨ Arquitectura del proyecto
+<img src="https://static.platzi.com/media/user_upload/Arquitecture-b82a207a-4d89-49af-988c-d0b410fe676c.jpg" alt="image" width="300" height="200">
+
+#### :star: IMAGE
+<img src="https://d1.awsstatic.com/acs/characters/Logos/Docker-Logo_Horizontel_279x131.b8a5c41e56b77706656d61080f6a0217a3ba356d.png" alt="image" width="200" height="200">
 <img src="https://i.imgur.com/p0Nufjn.jpg" alt="image" width="300" height="200">
